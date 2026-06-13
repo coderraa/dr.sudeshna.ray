@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Sudeshna Ray | Trusted Gynaecologist &amp; Obstetrician in Mumbai</title>
+<meta name="description" content="Dr. Sudeshna Ray, MD, FRCOG (London) — Obstetrician & Gynaecologist in Mumbai with 25 years of experience. Robotic & keyhole gynaecology, obstetrics, infertility and complete women's health care." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0891b2;--primary-deep:#0e7490;--primary-darker:#155e63;
+  --secondary:#22d3ee;--accent:#059669;--accent-deep:#047857;--gold:#d9a441;
+  --bg:#ecfeff;--fg:#0f3a44;--fg-soft:#3f6670;--muted:#e2f3f7;--ring:#0891b2;
+  --blur:16px;--glass-light:rgba(255,255,255,.55);--glass-dark:rgba(255,255,255,.12);
+  --border-light:rgba(255,255,255,.7);--border-dark:rgba(255,255,255,.22);
+  --spring:cubic-bezier(0.16,1,0.3,1);--ease-out:cubic-bezier(0.22,0.61,0.36,1);
+  --t-fast:180ms;--t-mid:280ms;--maxw:1180px;--radius:20px;--radius-lg:28px;
+  --shadow-soft:0 10px 30px rgba(8,59,68,.10);--shadow-glass:0 16px 50px rgba(8,59,68,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Noto Sans',system-ui,sans-serif;color:var(--fg);background:var(--bg);line-height:1.65;overflow-x:hidden;font-size:16px}
+h1,h2,h3,h4{font-family:'Figtree',sans-serif;font-weight:700;line-height:1.14;letter-spacing:-.02em;color:var(--fg)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.eyebrow{font-family:'Figtree';font-weight:700;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--primary)}
+.eyebrow.on-dark{color:var(--secondary)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:8px}
+.on-dark a:focus-visible,.on-dark button:focus-visible{outline-color:var(--secondary)}
+.skip{position:absolute;left:-999px;top:8px;z-index:300;background:#fff;color:var(--fg);padding:10px 16px;border-radius:10px;font-weight:600}
+.skip:focus{left:14px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;cursor:pointer;border:none;font-family:'Figtree';font-weight:600;font-size:.96rem;
+  padding:.92em 1.7em;border-radius:100px;transition:transform var(--t-fast) var(--spring),box-shadow var(--t-fast),background var(--t-fast);min-height:48px;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 26px rgba(5,150,105,.34)}
+.btn-primary:hover{background:var(--accent-deep);transform:translateY(-2px)}
+.btn-glass{background:var(--glass-dark);color:#fff;border:1px solid var(--border-dark);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn-glass:hover{background:rgba(255,255,255,.22);transform:translateY(-2px)}
+.btn-outline{background:rgba(255,255,255,.6);color:var(--primary-deep);border:1.5px solid var(--primary);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.btn-outline:hover{background:#fff;transform:translateY(-2px)}
+
+.bg-stage{position:fixed;inset:0;z-index:-2;background:
+   radial-gradient(1200px 800px at 80% -10%, #cffafe 0%, transparent 60%),
+   radial-gradient(1000px 700px at -10% 20%, #d1fae5 0%, transparent 55%),
+   linear-gradient(180deg,#ecfeff 0%,#f4fffe 40%,#ecfeff 100%)}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.5;z-index:-1;will-change:transform}
+.blob.b1{width:46vw;height:46vw;left:-10vw;top:-8vw;background:radial-gradient(circle at 40% 40%,#22d3ee,transparent 65%);animation:drift1 26s ease-in-out infinite}
+.blob.b2{width:40vw;height:40vw;right:-12vw;top:18vh;background:radial-gradient(circle at 50% 50%,#34d399,transparent 65%);opacity:.42;animation:drift2 32s ease-in-out infinite}
+.blob.b3{width:34vw;height:34vw;left:24vw;bottom:-14vw;background:radial-gradient(circle at 50% 50%,#a5f3fc,transparent 60%);opacity:.4;animation:drift3 30s ease-in-out infinite}
+@keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(6vw,5vh) scale(1.08)}}
+@keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-5vw,4vh) scale(1.12)}}
+@keyframes drift3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(4vw,-6vh) scale(1.06)}}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s var(--ease-out),transform .7s var(--spring)}
+.reveal.in{opacity:1;transform:none}
+.stagger>*{opacity:0;transform:translateY(26px);transition:opacity .6s var(--ease-out),transform .6s var(--spring)}
+.stagger.in>*{opacity:1;transform:none}
+.stagger.in>*:nth-child(1){transition-delay:.04s}.stagger.in>*:nth-child(2){transition-delay:.09s}
+.stagger.in>*:nth-child(3){transition-delay:.14s}.stagger.in>*:nth-child(4){transition-delay:.19s}
+.stagger.in>*:nth-child(5){transition-delay:.24s}.stagger.in>*:nth-child(6){transition-delay:.29s}
+.stagger.in>*:nth-child(7){transition-delay:.34s}.stagger.in>*:nth-child(8){transition-delay:.39s}
+
+.glass{background:var(--glass-light);backdrop-filter:blur(var(--blur)) saturate(135%);-webkit-backdrop-filter:blur(var(--blur)) saturate(135%);
+  border:1px solid var(--border-light);border-radius:var(--radius);box-shadow:var(--shadow-glass);position:relative;overflow:hidden}
+.glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(255,255,255,0) 40%)}
+.glass-dark{background:var(--glass-dark);backdrop-filter:blur(var(--blur)) saturate(130%);-webkit-backdrop-filter:blur(var(--blur)) saturate(130%);
+  border:1px solid var(--border-dark);border-radius:var(--radius);position:relative;overflow:hidden}
+.glass-dark::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(255,255,255,0) 45%)}
+
+/* top contact bar */
+.topbar{position:relative;z-index:60;background:rgba(13,90,99,.96);color:#fff;font-size:.84rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:8px 26px;flex-wrap:wrap}
+.topbar .l{display:flex;gap:20px;flex-wrap:wrap}
+.topbar .l span{display:inline-flex;align-items:center;gap:7px}
+.topbar svg{width:14px;height:14px;opacity:.85}
+.topbar a{color:#fff}
+.topbar .r{display:flex;gap:14px}.topbar .r a{opacity:.85}.topbar .r a:hover{opacity:1}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:100;transition:padding var(--t-mid)}
+.nav-inner{max-width:var(--maxw);margin:10px auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-radius:100px;transition:all var(--t-mid)}
+header.nav.scrolled .nav-inner{background:var(--glass-light);backdrop-filter:blur(var(--blur)) saturate(140%);-webkit-backdrop-filter:blur(var(--blur)) saturate(140%);border:1px solid var(--border-light);box-shadow:var(--shadow-soft)}
+.brand{display:flex;align-items:center;gap:11px}
+.brand .mark{width:44px;height:44px;border-radius:13px;flex:none;display:grid;place-items:center;color:#fff;font-family:'Figtree';font-weight:800;font-size:1.2rem;background:linear-gradient(135deg,var(--secondary),var(--primary-deep));box-shadow:0 6px 16px rgba(8,145,178,.4)}
+.brand b{font-family:'Figtree';font-weight:700;font-size:1.12rem;display:block;line-height:1.05;color:var(--fg)}
+.brand small{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{color:var(--fg-soft);font-family:'Figtree';font-weight:500;font-size:.92rem;padding:.5em .8em;border-radius:10px;transition:background var(--t-fast),color var(--t-fast)}
+.nav-links a:hover{background:var(--muted);color:var(--primary-deep)}
+.nav-cta{margin-left:6px}
+.nav-toggle{display:none;background:var(--muted);border:1px solid var(--border-light);border-radius:12px;cursor:pointer;flex-direction:column;gap:5px;padding:11px;min-width:46px;min-height:46px;align-items:center;justify-content:center}
+.nav-toggle span{width:22px;height:2.4px;background:var(--fg);border-radius:3px;transition:.3s var(--spring)}
+
+/* hero */
+.hero{padding:48px 0 70px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}
+.hero-glass-panel{padding:44px 42px}
+.badge{display:inline-flex;align-items:center;gap:9px;background:var(--glass-dark);border:1px solid var(--border-dark);color:#063b44;padding:.5em 1em;border-radius:100px;font-family:'Figtree';font-weight:600;font-size:.8rem;margin-bottom:20px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(5,150,105,.22);animation:pulse 2.4s var(--ease-out) infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.55}}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.5rem);font-weight:800;margin-bottom:18px;letter-spacing:-.03em}
+.hero h1 .grad{background:linear-gradient(120deg,var(--primary-deep),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{font-size:1.08rem;color:var(--fg-soft);max-width:540px;margin-bottom:20px}
+.hero-creds{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.hero-creds span{font-family:'Figtree';font-weight:600;font-size:.78rem;background:rgba(255,255,255,.55);border:1px solid var(--border-light);color:var(--primary-darker);padding:.45em .9em;border-radius:9px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:13px}
+.hero-portrait{position:relative}
+.portrait-card{padding:18px;border-radius:var(--radius-lg)}
+.portrait-img{border-radius:18px;overflow:hidden;aspect-ratio:4/5;position:relative;background:#cfe9e6}
+.portrait-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.portrait-cap{position:absolute;left:30px;right:30px;bottom:30px;display:flex;align-items:center;gap:12px;padding:14px 16px}
+.portrait-cap .av{width:46px;height:46px;border-radius:50%;flex:none;background:linear-gradient(135deg,var(--secondary),var(--primary-deep))}
+.portrait-cap b{font-family:'Figtree';font-size:1rem;display:block;color:var(--fg)}
+.portrait-cap small{color:var(--fg-soft);font-size:.78rem}
+.float-chip{position:absolute;padding:12px 15px;border-radius:14px;display:flex;align-items:center;gap:10px;font-family:'Figtree';font-weight:600;font-size:.84rem;color:var(--fg);z-index:3}
+.float-chip .ic{width:34px;height:34px;border-radius:10px;flex:none;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--accent),var(--primary))}
+.chip-a{top:6px;left:-28px;animation:floaty 5s var(--ease-out) infinite}
+.chip-b{bottom:90px;right:-26px;animation:floaty 5s var(--ease-out) 1.6s infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* stats */
+.stats{padding:6px 0 66px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{padding:28px 22px;text-align:center;transition:transform var(--t-mid) var(--spring)}
+.stat:hover{transform:translateY(-6px)}
+.stat .num{font-family:'Figtree';font-weight:800;font-size:2.5rem;line-height:1;background:linear-gradient(120deg,var(--primary-deep),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{margin-top:8px;color:var(--fg-soft);font-size:.9rem;font-weight:500}
+
+.sec{padding:84px 0;position:relative}
+.sec-head{max-width:680px;margin-bottom:46px}
+.sec-head.center{margin:0 auto 46px;text-align:center}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:14px 0 14px}
+.sec-head p{color:var(--fg-soft);font-size:1.04rem}
+.band-dark{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,#0b4f5a 0%,#0e7490 55%,#0891b2 130%)}
+.band-dark h2,.band-dark h3{color:#fff}.band-dark .sec-head p{color:rgba(255,255,255,.85)}
+.band-dark .b-orb{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}
+.band-dark .o1{width:420px;height:420px;background:radial-gradient(circle,rgba(52,211,153,.4),transparent 65%);right:-120px;top:-120px}
+.band-dark .o2{width:360px;height:360px;background:radial-gradient(circle,rgba(34,211,238,.35),transparent 65%);left:-120px;bottom:-120px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center}
+.about-frame{padding:16px;border-radius:var(--radius-lg)}
+.about-img{border-radius:18px;overflow:hidden;aspect-ratio:1/1.05;position:relative;background:#cfe9e6}
+.about-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-exp{position:absolute;right:-18px;bottom:26px;padding:20px 24px;text-align:center;border-radius:18px;color:#fff;background:linear-gradient(135deg,var(--primary-deep),var(--accent-deep));box-shadow:var(--shadow-glass)}
+.about-exp b{font-family:'Figtree';font-weight:800;font-size:2.4rem;display:block;line-height:1}
+.about-exp small{font-size:.72rem;letter-spacing:.06em;opacity:.9}
+.about-body h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin:14px 0 16px}
+.about-body p{color:var(--fg-soft);margin-bottom:16px;font-size:1.02rem}
+.about-quote{padding:18px 22px;margin:22px 0;font-family:'Figtree';font-style:italic;font-weight:500;font-size:1.1rem;color:var(--primary-darker);border-radius:14px}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 28px;list-style:none}
+.about-points li{display:flex;gap:10px;align-items:flex-start;font-family:'Figtree';font-weight:500;font-size:.93rem}
+.about-points .tick{width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;font-size:.76rem;background:var(--accent)}
+
+/* core services (image cards) */
+.score-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.score{border-radius:var(--radius);overflow:hidden;transition:transform var(--t-mid) var(--spring),box-shadow var(--t-mid)}
+.score:hover{transform:translateY(-8px)}
+.score .ph{height:200px;position:relative;overflow:hidden}
+.score .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--spring)}
+.score:hover .ph img{transform:scale(1.06)}
+.score .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,59,68,.05),rgba(8,59,68,.35))}
+.score .bd{padding:24px 24px 26px}
+.score h3{font-size:1.24rem;margin-bottom:8px}
+.score p{color:var(--fg-soft);font-size:.93rem;margin-bottom:14px}
+.score .more{font-family:'Figtree';font-weight:600;font-size:.86rem;color:var(--primary-deep);display:inline-flex;gap:6px;align-items:center}
+.score .more svg{transition:transform var(--t-fast) var(--spring)}.score:hover .more svg{transform:translateX(4px)}
+
+/* specialties grid */
+.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.spec{padding:24px 22px;transition:transform var(--t-mid) var(--spring)}
+.spec:hover{transform:translateY(-6px)}
+.spec .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:#fff;margin-bottom:14px;background:linear-gradient(135deg,var(--primary),var(--accent))}
+.spec .ic svg{width:24px;height:24px}
+.spec h3{font-size:1.04rem;margin-bottom:6px}
+.spec p{color:var(--fg-soft);font-size:.86rem;margin:0}
+
+/* approach band */
+.appr-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
+.appr .lead{color:rgba(255,255,255,.86);font-size:1.05rem;margin:14px 0 26px}
+.appr-list{display:grid;gap:12px}
+.appr-item{display:flex;gap:15px;align-items:flex-start;padding:18px 20px;border-radius:16px;transition:transform var(--t-fast) var(--spring)}
+.appr-item:hover{transform:translateX(6px)}
+.appr-item .n{width:34px;height:34px;border-radius:8px;flex:none;display:grid;place-items:center;background:rgba(255,255,255,.12);color:var(--secondary);font-family:'Figtree';font-weight:800}
+.appr-item b{font-family:'Figtree';font-weight:600;font-size:1.04rem;display:block;margin-bottom:2px;color:#fff}
+.appr-item p{color:rgba(255,255,255,.8);font-size:.9rem;margin:0}
+.appr-media{border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;position:relative}
+.appr-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* reviews */
+.tmt-stage{max-width:850px;margin:0 auto;position:relative}
+.tmt-track{position:relative;min-height:300px}
+.tmt-slide{position:absolute;inset:0;opacity:0;transform:translateY(20px) scale(.985);transition:opacity .6s var(--ease-out),transform .6s var(--spring);pointer-events:none;padding:44px 48px;text-align:center}
+.tmt-slide.active{opacity:1;transform:none;pointer-events:auto;position:relative}
+.tmt-stars{color:var(--gold);letter-spacing:3px;font-size:1.1rem;margin-bottom:14px}
+.tmt-text{font-family:'Figtree';font-weight:500;font-size:1.18rem;color:var(--fg);line-height:1.5;margin-bottom:22px}
+.tmt-who{display:flex;align-items:center;justify-content:center;gap:12px}
+.tmt-who .av{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:'Figtree';font-weight:700;background:linear-gradient(135deg,var(--secondary),var(--primary-deep))}
+.tmt-who b{font-family:'Figtree';font-weight:600;font-size:.95rem}
+.tmt-who small{color:var(--fg-soft);font-size:.82rem;display:block}
+.tmt-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:26px}
+.tmt-arrow{width:48px;height:48px;border-radius:50%;cursor:pointer;display:grid;place-items:center;color:var(--primary-deep);background:rgba(255,255,255,.6);border:1px solid var(--border-light);transition:transform var(--t-fast) var(--spring),background var(--t-fast);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tmt-arrow:hover{background:var(--primary-deep);color:#fff;transform:scale(1.06)}
+.tmt-dots{display:flex;gap:8px}
+.tmt-dot{width:9px;height:9px;border-radius:50%;background:rgba(8,145,178,.25);cursor:pointer;transition:all var(--t-fast) var(--spring);border:none;padding:0}
+.tmt-dot.active{background:var(--primary-deep);width:26px;border-radius:6px}
+.rev-meta{text-align:center;margin-bottom:30px;color:var(--fg-soft);font-family:'Figtree';font-weight:600}
+.rev-meta b{color:var(--gold)}
+
+/* team */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.team-item{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:14px}
+.team-item .ic{width:40px;height:40px;border-radius:10px;flex:none;display:grid;place-items:center;color:var(--primary-deep);background:var(--muted)}
+.team-item b{font-family:'Figtree';font-weight:600;font-size:.96rem}
+
+/* blog */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.post{overflow:hidden;transition:transform var(--t-mid) var(--spring)}
+.post:hover{transform:translateY(-7px)}
+.post .ph{height:180px;overflow:hidden;position:relative}
+.post .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--spring)}
+.post:hover .ph img{transform:scale(1.06)}
+.post .ph::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,59,68,.36),rgba(8,59,68,0) 55%)}
+.post .ph .cat{position:absolute;top:12px;left:12px;z-index:2;background:var(--glass-dark);border:1px solid var(--border-dark);color:#fff;font-family:'Figtree';font-weight:600;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;padding:.35em .8em;border-radius:100px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.post .bd{padding:22px 22px 24px}
+.post .bd .date{font-family:'Figtree';font-size:.76rem;color:var(--fg-soft);font-weight:600}
+.post .bd h3{font-size:1.06rem;margin:7px 0 9px;line-height:1.32}
+.post .bd p{color:var(--fg-soft);font-size:.89rem;margin-bottom:12px}
+.post .bd .more{font-family:'Figtree';font-weight:600;font-size:.82rem;color:var(--primary-deep)}
+
+/* contact / book */
+.book-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:50px;position:relative;z-index:1}
+.book-info h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:14px 0 16px}
+.book-info>p{color:rgba(255,255,255,.85);font-size:1.03rem;margin-bottom:26px}
+.book-rows{display:grid;gap:13px;margin-bottom:24px}
+.book-row{display:flex;gap:15px;align-items:flex-start}
+.book-row .ic{width:48px;height:48px;border-radius:13px;flex:none;display:grid;place-items:center;color:var(--secondary);background:rgba(255,255,255,.08);border:1px solid var(--border-dark)}
+.book-row small{color:rgba(255,255,255,.62);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;display:block;font-family:'Figtree';font-weight:600}
+.book-row b{color:#fff;font-weight:500;font-size:.98rem}
+.book-row b a{color:#fff}
+.map{border-radius:16px;overflow:hidden;height:200px;border:1px solid var(--border-dark)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.form-card{padding:38px;border-radius:var(--radius-lg)}
+.form-card h3{font-size:1.4rem;margin-bottom:5px}
+.form-card .fsub{color:var(--fg-soft);font-size:.9rem;margin-bottom:22px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{margin-bottom:15px}
+.field label{display:block;font-family:'Figtree';font-size:.82rem;font-weight:600;margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;border:1.5px solid var(--border-light);border-radius:12px;padding:13px 15px;font-family:'Noto Sans';font-size:.95rem;color:var(--fg);background:rgba(255,255,255,.6);transition:border var(--t-fast),box-shadow var(--t-fast),background var(--t-fast);min-height:48px}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--primary);background:#fff;box-shadow:0 0 0 4px rgba(8,145,178,.16)}
+.field.err input,.field.err textarea{border-color:#dc2626;background:#fef2f2}
+.field .msg{font-size:.76rem;color:#dc2626;margin-top:5px;display:none;font-family:'Figtree';font-weight:500}
+.field.err .msg{display:block}
+.form-card .btn-primary{width:100%;margin-top:4px}
+.form-note{font-family:'Figtree';font-size:.78rem;color:var(--fg-soft);text-align:center;margin-top:13px}
+.form-success{display:none;text-align:center;padding:30px 8px}
+.form-success.show{display:block;animation:pop .5s var(--spring)}
+@keyframes pop{0%{transform:scale(.92);opacity:0}100%{transform:scale(1);opacity:1}}
+.form-success .check{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;margin:0 auto 16px;color:#fff;background:linear-gradient(135deg,var(--accent),var(--primary))}
+.form-success h3{margin-bottom:8px}.form-success p{color:var(--fg-soft)}
+
+/* footer */
+footer.ft{padding:60px 0 26px;position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,#08323a,#0b4f5a)}
+.ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.1fr;gap:38px;margin-bottom:42px}
+.ft-brand p{color:rgba(255,255,255,.72);font-size:.92rem;max-width:300px;margin-top:14px}
+.ft-soc{display:flex;gap:10px;margin-top:18px}
+.ft-soc a{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;background:rgba(255,255,255,.08);border:1px solid var(--border-dark);transition:transform var(--t-fast) var(--spring),background var(--t-fast)}
+.ft-soc a:hover{background:var(--primary);transform:translateY(-3px)}
+.ft-col h4{font-family:'Figtree';font-weight:600;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:15px}
+.ft-col a,.ft-col p{display:block;color:rgba(255,255,255,.78);font-size:.92rem;padding:5px 0}
+.ft-col a:hover{color:var(--secondary)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.84rem;color:rgba(255,255,255,.6)}
+
+.wa{position:fixed;right:22px;bottom:22px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px rgba(37,211,102,.45);transition:transform var(--t-fast) var(--spring);animation:floaty 4s var(--ease-out) infinite}
+.wa:hover{transform:scale(1.08)}.wa svg{width:32px;height:32px;fill:#fff}
+.wa .tip{position:absolute;right:74px;background:#fff;color:var(--fg);font-family:'Figtree';font-size:.82rem;font-weight:600;padding:.6em 1em;border-radius:10px;box-shadow:var(--shadow-soft);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity var(--t-fast)}
+.wa:hover .tip{opacity:1}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:200;background:linear-gradient(90deg,var(--secondary),var(--accent))}
+
+@media(max-width:980px){
+  .hero-grid,.about-grid,.appr-grid,.book-grid{grid-template-columns:1fr;gap:38px}
+  .hero-portrait{max-width:400px;margin:0 auto}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .score-grid,.blog-grid,.team-grid{grid-template-columns:repeat(2,1fr)}
+  .spec-grid{grid-template-columns:repeat(3,1fr)}
+  .ft-grid{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media(max-width:760px){
+  .nav-links{position:fixed;top:0;right:0;bottom:0;width:min(300px,84vw);flex-direction:column;align-items:stretch;gap:5px;padding:90px 22px 30px;background:linear-gradient(160deg,#0b4f5a,#0e7490);transform:translateX(110%);transition:transform var(--t-mid) var(--spring);box-shadow:var(--shadow-glass)}
+  .nav-links.open{transform:none}
+  .nav-links a{color:#fff!important;padding:.85em 1em;font-size:1rem;border-radius:10px}
+  .nav-links a:hover{background:rgba(255,255,255,.14)!important}
+  .nav-cta{margin:8px 0 0}.nav-toggle{display:flex}
+  .nav-open .nav-toggle span{background:#fff!important}
+  .nav-open .nav-toggle span:nth-child(1){transform:translateY(7.4px) rotate(45deg)}
+  .nav-open .nav-toggle span:nth-child(2){opacity:0}
+  .nav-open .nav-toggle span:nth-child(3){transform:translateY(-7.4px) rotate(-45deg)}
+  .hero-glass-panel{padding:34px 26px}
+  .spec-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .wrap{padding:0 18px}.sec{padding:60px 0}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .score-grid,.blog-grid,.team-grid,.about-points,.fgrid,.spec-grid{grid-template-columns:1fr}
+  .form-card{padding:26px 22px}.tmt-slide{padding:32px 24px}
+  .ft-grid{grid-template-columns:1fr}.float-chip{display:none}
+  .topbar .r{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .blob{animation:none!important}.reveal,.stagger>*{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<div class="bg-stage" aria-hidden="true"></div>
+<div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div><div class="blob b3" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- top contact bar -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="l">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Appointment <a href="tel:+919892875329">+91 98928 75329</a></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/></svg>Emergency <a href="tel:+919833384550">+91 98333 84550</a></span>
+    </div>
+    <div class="r">
+      <a href="https://www.instagram.com/dr.sudeshna_cares" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://m.facebook.com/DrSudeshna.Gynaecologist" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.linkedin.com/in/dr-sudeshna-ray-93bbb3153" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<!-- nav -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="Dr. Sudeshna Ray home">
+      <span class="mark" aria-hidden="true">S</span>
+      <span><b>Dr. Sudeshna Ray</b><small>Gynaecologist &amp; Obstetrician</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#specialties">Specialties</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary nav-cta">Book Appointment</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<!-- hero -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-glass-panel glass reveal">
+        <span class="badge"><span class="dot" aria-hidden="true"></span>MD · FRCOG (London) · Mumbai</span>
+        <h1>Trusted gynaecologist in Mumbai with <span class="grad">25 years</span> of experience.</h1>
+        <p class="sub">Dr. Sudeshna Ray is an obstetrician and gynaecologist of repute, offering advanced non-surgical, scarless, robotic and keyhole care — and empowering every woman to take part in her own decisions.</p>
+        <div class="hero-creds">
+          <span>MD (OBGYN)</span><span>FRCOG, London</span><span>25 Years Experience</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book an Appointment
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="tel:+919892875329" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 98928 75329</a>
+        </div>
+      </div>
+      <div class="hero-portrait reveal">
+        <div class="float-chip glass chip-a">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1L12 16.9 5.7 21l2.3-7.1-6-4.5h7.6z"/></svg></span>5.0 · 120+ reviews</div>
+        <div class="float-chip glass chip-b">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>FRCOG, London</div>
+        <div class="portrait-card glass-dark">
+          <div class="portrait-img"><img src="images/IMG_7706.jpg" alt="Dr. Sudeshna Ray, gynaecologist and obstetrician" width="1200" height="1500" fetchpriority="high"></div>
+          <div class="portrait-cap glass">
+            <span class="av" aria-hidden="true"></span>
+            <div><b>Dr. Sudeshna Ray</b><small>MD · FRCOG (London)</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- stats -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid stagger">
+      <div class="stat glass"><div class="num"><span data-count="25">0</span>+</div><div class="lbl">Years of Experience</div></div>
+      <div class="stat glass"><div class="num"><span data-count="120">0</span>+</div><div class="lbl">5★ Google Reviews</div></div>
+      <div class="stat glass"><div class="num"><span data-count="11">0</span></div><div class="lbl">Areas of Specialty</div></div>
+      <div class="stat glass"><div class="num">FRCOG</div><div class="lbl">Royal College, London</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- about -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-frame glass reveal">
+        <div class="about-img"><img src="images/IMG_8529.jpg" alt="Dr. Sudeshna Ray at her consultation desk" width="1200" height="1260" loading="lazy"></div>
+        <div class="about-exp"><b>25</b><small>YEARS OF<br>PRACTICE</small></div>
+      </div>
+      <div class="about-body reveal">
+        <span class="eyebrow">About Dr. Sudeshna Ray</span>
+        <h2>Advancing the science and art of women's health.</h2>
+        <p>Dr. Sudeshna Ray, MD, FRCOG (London) is an obstetrician and gynaecologist of repute — popular amongst her patients, colleagues and academicians, and practising for the last 25 years. She is a Fellow of the Royal College of Obstetricians and Gynaecologists, London, the highest recognition given in the UK for her contribution to advancing the field.</p>
+        <p>She believes in empowering women with the knowledge to participate in their own decision-making, and is passionate about advanced, less-invasive care — non-surgical options, scarless, robotic and keyhole procedures, and multidisciplinary management when required.</p>
+        <div class="about-quote glass">"Our mission is to empower women to prioritise their health, participate in informed decision making and lead happier, healthier lives."</div>
+        <ul class="about-points">
+          <li><span class="tick" aria-hidden="true">✓</span> Fellow, Royal College of OBGYN, London</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Robotic, keyhole &amp; scarless surgery</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Full range of obstetric &amp; gynae care</li>
+          <li><span class="tick" aria-hidden="true">✓</span> Multidisciplinary holistic care team</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- core services -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Services &amp; Treatments</span>
+      <h2>Complete care for every stage of life</h2>
+      <p>From advanced robotic gynaecology to obstetrics and a full range of women's health services.</p>
+    </div>
+    <div class="score-grid stagger">
+      <article class="score glass">
+        <div class="ph"><img src="images/IMG_4302.jpg" alt="Dr. Sudeshna Ray at a da Vinci robotic surgery console" loading="lazy"></div>
+        <div class="bd"><h3>Robotic Surgery in Gynaecology</h3><p>Precise, scarless robotic and keyhole procedures with faster recovery and minimal pain.</p><a href="#contact" class="more">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </article>
+      <article class="score glass">
+        <div class="ph"><img src="images/IMG_7715.jpg" alt="Clinical care in the gynaecology practice" loading="lazy"></div>
+        <div class="bd"><h3>Gynaecology</h3><p>A full range of gynaecological services, including the diagnosis and treatment of endometriosis.</p><a href="#contact" class="more">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </article>
+      <article class="score glass">
+        <div class="ph"><img src="images/IMG_7690.jpg" alt="Dr. Sudeshna Ray, obstetrics and maternity care" loading="lazy"></div>
+        <div class="bd"><h3>Obstetrics &amp; Maternity</h3><p>Expert guidance through a healthy pregnancy, from conception to childbirth and beyond.</p><a href="#contact" class="more">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- specialties -->
+<section class="sec" id="specialties">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Our Specialties</span>
+      <h2>Tailored care for every stage of life</h2>
+      <p>A holistic approach to women's health, supported by a multidisciplinary team.</p>
+    </div>
+    <div class="spec-grid stagger">
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></svg></div><h3>Adolescent Health</h3><p>Care for growth, mental wellness and preventive guidance.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Menopause</h3><p>Support for hormonal balance and physical changes.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l7 4 7-4"/></svg></div><h3>Hormonal Health</h3><p>Balance for energy, mood, metabolism and reproduction.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Pregnancy</h3><p>Comprehensive care from conception to childbirth.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div><h3>Skin Health</h3><p>Personalised care for healthy, glowing skin.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div><h3>Sleep &amp; Nerve Health</h3><p>Restful sleep and optimal nerve function.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Mental Health</h3><p>Compassionate support for emotional well-being.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Sexual Health</h3><p>Confidential, expert care for sexual wellness.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4v6a4 4 0 0 0 8 0V4M8 20v-6a4 4 0 0 1 8 0v6"/></svg></div><h3>Bone Health</h3><p>Early diagnosis, nutrition and bone-care guidance.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a4 4 0 0 0-4 4c0 2 4 6 4 6s4-4 4-6a4 4 0 0 0-4-4zM6 21h12"/></svg></div><h3>Nutritional Health</h3><p>Balanced nutrition for immunity and energy.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="2"/><path d="M12 7v6m0 0-3 5m3-5 3 5M7 10h10"/></svg></div><h3>Physical Therapy</h3><p>Restoring movement, mobility and pain relief.</p></div>
+      <div class="spec glass"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/></svg></div><h3>Preventive Care</h3><p>Screenings and guidance to stay well for life.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- approach band -->
+<section class="sec band-dark appr" id="approach">
+  <div class="b-orb o1" aria-hidden="true"></div><div class="b-orb o2" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="appr-grid">
+      <div class="reveal">
+        <span class="eyebrow on-dark">Promoting Wellness Together</span>
+        <h2>Keeping you well is our priority.</h2>
+        <p class="lead">Complex cases are managed with a multidisciplinary team and the latest technology — so you receive the finest care for every women's health concern.</p>
+        <div class="appr-list stagger">
+          <div class="appr-item glass-dark"><span class="n">1</span><div><b>Empowered decisions</b><p>You are given the knowledge to take part in your own care.</p></div></div>
+          <div class="appr-item glass-dark"><span class="n">2</span><div><b>Advanced, less-invasive care</b><p>Non-surgical, scarless, robotic and keyhole options where possible.</p></div></div>
+          <div class="appr-item glass-dark"><span class="n">3</span><div><b>Holistic care team</b><p>Specialists across disciplines, coordinated around you.</p></div></div>
+        </div>
+      </div>
+      <div class="appr-media reveal"><img src="images/IMG_4307.jpg" alt="Dr. Sudeshna Ray with her surgical team" width="900" height="675" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Patient Reviews</span>
+      <h2>See what our patients are saying</h2>
+    </div>
+    <div class="rev-meta reveal"><b>★★★★★</b> &nbsp;5.0 rating based on 120+ Google reviews</div>
+    <div class="tmt-stage reveal">
+      <div class="tmt-track" id="tmtTrack" aria-live="polite">
+        <div class="tmt-slide glass active">
+          <div class="tmt-stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="tmt-text">Incredibly attentive and knowledgeable. Throughout my pregnancy she gave excellent prenatal care and explained complex things simply. I felt comfortable and confident under her care.</p>
+          <div class="tmt-who"><span class="av" aria-hidden="true">ND</span><div><b>Nupur Das</b><small>Posted on Google</small></div></div>
+        </div>
+        <div class="tmt-slide glass">
+          <div class="tmt-stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="tmt-text">An exceptional gynaecologist — professional and personal. She made me comfortable, answered every question patiently, and the prescribed treatment worked perfectly.</p>
+          <div class="tmt-who"><span class="av" aria-hidden="true">AP</span><div><b>Anisha Poddar</b><small>Posted on Google</small></div></div>
+        </div>
+        <div class="tmt-slide glass">
+          <div class="tmt-stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="tmt-text">From the moment I walked in I felt at ease. She listened patiently and explained each concern thoroughly. Her expertise and compassionate approach truly stand out.</p>
+          <div class="tmt-who"><span class="av" aria-hidden="true">PT</span><div><b>Puja Thakur</b><small>Posted on Google</small></div></div>
+        </div>
+        <div class="tmt-slide glass">
+          <div class="tmt-stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="tmt-text">I had struggled with menstrual issues for a long time. Her thorough examination and a personalised treatment plan significantly improved my quality of life. Highly recommended.</p>
+          <div class="tmt-who"><span class="av" aria-hidden="true">LJ</span><div><b>Lakshmi Jha</b><small>Posted on Google</small></div></div>
+        </div>
+        <div class="tmt-slide glass">
+          <div class="tmt-stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="tmt-text">Truly a gem in gynaecology. Warm and holistic — she considers both physical and emotional health. I am extremely satisfied and will definitely return.</p>
+          <div class="tmt-who"><span class="av" aria-hidden="true">KP</span><div><b>Kareena Pandey</b><small>Posted on Google</small></div></div>
+        </div>
+      </div>
+      <div class="tmt-nav">
+        <button class="tmt-arrow" id="tmtPrev" aria-label="Previous review"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <div class="tmt-dots" id="tmtDots"></div>
+        <button class="tmt-arrow" id="tmtNext" aria-label="Next review"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- team -->
+<section class="sec" id="team">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Holistic Care Team</span>
+      <h2>A team for every aspect of your health</h2>
+      <p>We offer all the services a woman could possibly require, coordinated under one roof.</p>
+    </div>
+    <div class="team-grid stagger">
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/></svg></span><b>Dermatology / Skin</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4v6a4 4 0 0 0 8 0V4"/></svg></span><b>Orthopaedics / Bone</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l7 4 7-4"/></svg></span><b>Endocrinologist</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></span><b>Neurologist</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span><b>Mental Health</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a4 4 0 0 0-4 4c0 2 4 6 4 6s4-4 4-6a4 4 0 0 0-4-4z"/></svg></span><b>Nutritionist</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></svg></span><b>Urogynaecologist</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="2"/><path d="M12 7v6M7 10h10"/></svg></span><b>Physiotherapy / Yoga</b></div>
+      <div class="team-item glass"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16"/></svg></span><b>Admin Team</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- blog -->
+<section class="sec" id="blog">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Posts &amp; Articles</span>
+      <h2>From the journal</h2>
+      <p>Clear, science-backed writing on women's health and modern, less-invasive treatment.</p>
+    </div>
+    <div class="blog-grid stagger">
+      <article class="post glass">
+        <div class="ph"><img src="images/IMG_8518.jpg" alt="Women's heart health article" loading="lazy"><span class="cat">Women's Health</span></div>
+        <div class="bd"><span class="date">May 12, 2026</span><h3>Heart Health in Women: Common Symptoms Often Ignored</h3><p>Heart disease is a leading cause of death in women, yet the warning signs are frequently missed.</p><a href="https://drsudeshnacares.com/2026/05/12/heart-health-in-women-common-symptoms-often-ignored/" class="more" target="_blank" rel="noopener">Read more →</a></div>
+      </article>
+      <article class="post glass">
+        <div class="ph"><img src="images/IMG_4311.jpg" alt="da Vinci robotic system used for V-NOTES surgery" loading="lazy"><span class="cat">Surgery</span></div>
+        <div class="bd"><span class="date">May 12, 2026</span><h3>Painless Recovery: The Impact of V-NOTES on Gynaecological Surgery</h3><p>V-NOTES is changing how many women's health conditions are treated — with less pain and no visible scars.</p><a href="https://drsudeshnacares.com/2026/05/12/painless-recovery-the-impact-of-v-notes-on-gynecological-surgeries/" class="more" target="_blank" rel="noopener">Read more →</a></div>
+      </article>
+      <article class="post glass">
+        <div class="ph"><img src="images/IMG_7847.jpg" alt="Robotic versus traditional laparoscopy article" loading="lazy"><span class="cat">Robotics</span></div>
+        <div class="bd"><span class="date">May 12, 2026</span><h3>Robotic vs Traditional Laparoscopy: Which Approach is Superior?</h3><p>Both are minimally invasive — here is how robotic surgery compares with traditional laparoscopy.</p><a href="https://drsudeshnacares.com/2026/05/12/robotic-vs-traditional-laparoscopy-which-approach-is-superior/" class="more" target="_blank" rel="noopener">Read more →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="sec band-dark" id="contact">
+  <div class="b-orb o1" aria-hidden="true"></div><div class="b-orb o2" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="book-grid">
+      <div class="book-info reveal">
+        <span class="eyebrow on-dark">Schedule a Consultation</span>
+        <h2>Your journey to better health begins here.</h2>
+        <p>Register by sharing a few details and the clinic will reach out to confirm your appointment. For urgent queries, call or message directly.</p>
+        <div class="book-rows">
+          <div class="book-row"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Clinic</small><b>M&amp;C Bliss Medicare Centre, Gita Smruti Building B, 2nd Floor, Pandita Ramabai Road, Gamdevi, Mumbai 400007</b></div></div>
+          <div class="book-row"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><small>Appointment</small><b><a href="tel:+919892875329">+91 98928 75329</a></b></div></div>
+          <div class="book-row"><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/></svg></span><div><small>Emergency</small><b><a href="tel:+919833384550">+91 98333 84550</a></b></div></div>
+        </div>
+        <div class="map">
+          <iframe title="Clinic location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Gita%20Smruti%20Building%2C%20Pandita%20Ramabai%20Road%2C%20Gamdevi%2C%20Mumbai%20400007&output=embed"></iframe>
+        </div>
+      </div>
+      <div class="form-card glass reveal">
+        <form id="bookForm" action="https://formspree.io/f/mykabbae" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New consultation request — Dr. Sudeshna Ray website">
+          <h3>Schedule a Consultation</h3>
+          <p class="fsub">We typically respond within one business day.</p>
+          <div class="fgrid">
+            <div class="field"><label for="fn">Name *</label><input id="fn" name="name" type="text" autocomplete="name" placeholder="Your name"><span class="msg">Please enter your name</span></div>
+            <div class="field"><label for="fp">Phone *</label><input id="fp" name="phone" type="tel" autocomplete="tel" placeholder="+91…"><span class="msg">Enter a valid phone number</span></div>
+          </div>
+          <div class="field"><label for="fe">Email *</label><input id="fe" name="email" type="email" autocomplete="email" placeholder="you@email.com"><span class="msg">Enter a valid email</span></div>
+          <div class="field"><label for="fsub">Subject</label><input id="fsub" name="subject" type="text" placeholder="Reason for your visit"></div>
+          <div class="field"><label for="fm">Message *</label><textarea id="fm" name="message" placeholder="Briefly describe your symptoms or question…"></textarea><span class="msg">Please add a short message</span></div>
+          <button type="submit" class="btn btn-primary">Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="form-note" id="formErr" style="color:#dc2626;display:none">Sorry, something went wrong. Please call +91 98928 75329 or message on WhatsApp.</p>
+          <p class="form-note">🔒 Your information is kept private and confidential.</p>
+        </form>
+        <div class="form-success" id="formSuccess" role="status">
+          <div class="check" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Thank you!</h3>
+          <p>Your request has been received. The clinic will contact you shortly to confirm your appointment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- footer -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <a href="#home" class="brand" aria-label="Dr. Sudeshna Ray home">
+          <span class="mark" aria-hidden="true">S</span>
+          <span><b style="color:#fff">Dr. Sudeshna Ray</b><small style="color:rgba(255,255,255,.8)">Gynaecologist &amp; Obstetrician</small></span>
+        </a>
+        <p>MD, FRCOG (London) — promoting wellness together, and empowering women to lead happier, healthier lives.</p>
+        <div class="ft-soc">
+          <a href="https://www.instagram.com/dr.sudeshna_cares" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://m.facebook.com/DrSudeshna.Gynaecologist" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 8h2V5h-2a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h2l1-3h-3V8a1 1 0 0 1 1-1z"/></svg></a>
+          <a href="https://www.linkedin.com/in/dr-sudeshna-ray-93bbb3153" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"/></svg></a>
+        </div>
+      </div>
+      <div class="ft-col"><h4>Services</h4><a href="#services">Robotic Surgery</a><a href="#services">Gynaecology</a><a href="#services">Obstetrics / Maternity</a><a href="#specialties">All Specialties</a></div>
+      <div class="ft-col"><h4>Quick Links</h4><a href="#about">About Me</a><a href="#reviews">Reviews</a><a href="#blog">Blog</a><a href="#contact">Contact Us</a></div>
+      <div class="ft-col"><h4>Our Location · Mumbai</h4><p>M&amp;C Bliss Medicare Centre, Gita Smruti Building B, 2nd Floor, Pandita Ramabai Road, Gamdevi, Mumbai 400007</p><a href="tel:+919892875329">+91 98928 75329</a></div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 Dr. Sudeshna Ray. All rights reserved.</span>
+      <span>Promoting Wellness Together</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919892875329?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" class="wa" aria-label="Chat on WhatsApp">
+  <span class="tip">Chat with us</span>
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.8 5.5 2.1 7.9L.5 31.5l7.8-2c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.2c-2.4 0-4.7-.6-6.7-1.9l-.5-.3-4.6 1.2 1.2-4.5-.3-.5C3.5 20.5 2.8 18.3 2.8 16 2.8 8.7 8.7 2.8 16 2.8S29.2 8.7 29.2 16 23.3 28.7 16 28.7zm7.3-9.6c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.2-2-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.7.1-.3 0-.5-.1-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.3 6.8 6 .9.4 1.7.6 2.3.8.9.3 1.8.3 2.5.2.8-.1 2.4-1 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
+</a>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const nav=document.getElementById('nav'),progress=document.getElementById('progress');
+function onScroll(){const sc=scrollY;nav.classList.toggle('scrolled',sc>30);const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h>0?sc/h*100:0)+'%';}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const navToggle=document.getElementById('navToggle'),navLinks=document.getElementById('navLinks');
+navToggle.addEventListener('click',()=>{const o=navLinks.classList.toggle('open');document.body.classList.toggle('nav-open',o);navToggle.setAttribute('aria-expanded',o?'true':'false');});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');document.body.classList.remove('nav-open');navToggle.setAttribute('aria-expanded','false');}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal,.stagger').forEach(el=>io.observe(el));
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=+el.dataset.count;if(reduce){el.textContent=t;cio.unobserve(el);return;}let c=0,s=Math.max(1,Math.ceil(t/55));const iv=setInterval(()=>{c+=s;if(c>=t){c=t;clearInterval(iv);}el.textContent=c;},22);cio.unobserve(el);}}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+const slides=[...document.querySelectorAll('.tmt-slide')],dots=document.getElementById('tmtDots');
+let idx=0,timer;
+slides.forEach((s,i)=>{const d=document.createElement('button');d.className='tmt-dot'+(i===0?' active':'');d.setAttribute('aria-label','Go to review '+(i+1));d.addEventListener('click',()=>go(i));dots.appendChild(d);});
+function go(n){slides[idx].classList.remove('active');dots.children[idx].classList.remove('active');idx=(n+slides.length)%slides.length;slides[idx].classList.add('active');dots.children[idx].classList.add('active');restart();}
+function restart(){clearInterval(timer);if(!reduce)timer=setInterval(()=>go(idx+1),6000);}
+document.getElementById('tmtNext').addEventListener('click',()=>go(idx+1));
+document.getElementById('tmtPrev').addEventListener('click',()=>go(idx-1));
+restart();
+const form=document.getElementById('bookForm');
+const eRe=/^[^\s@]+@[^\s@]+\.[^\s@]+$/,pRe=/^[+0-9()\-\s]{7,}$/;
+const setE=(id,bad)=>{document.getElementById(id).closest('.field').classList.toggle('err',bad);return !bad;};
+form.addEventListener('submit',async e=>{e.preventDefault();let ok=true;
+  ok&=setE('fn',!form.fn.value.trim());
+  ok&=setE('fp',!pRe.test(form.fp.value.trim()));
+  ok&=setE('fe',!eRe.test(form.fe.value.trim()));
+  ok&=setE('fm',!form.fm.value.trim());
+  if(!ok){const f=form.querySelector('.field.err input,.field.err textarea');if(f)f.focus();return;}
+  const btn=form.querySelector('button[type=submit]'),errEl=document.getElementById('formErr');
+  errEl.style.display='none';btn.disabled=true;btn.style.opacity=.7;
+  try{
+    const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+    if(!r.ok)throw new Error('send failed');
+    form.style.display='none';document.getElementById('formSuccess').classList.add('show');
+  }catch(err){errEl.style.display='block';btn.disabled=false;btn.style.opacity=1;}
+});
+['fn','fp','fe','fm'].forEach(id=>document.getElementById(id).addEventListener('input',e=>e.target.closest('.field').classList.remove('err')));
+</script>
+</body>
+</html>
